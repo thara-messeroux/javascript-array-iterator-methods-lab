@@ -294,6 +294,7 @@ let isAdultPresent = null;
 // Complete the exercise in the space below:
 isAdultPresent = devs.some(dev => (2025 - dev.year) >= 18);
 
+// Check your work:
 console.log('Exercise 6 my result: ', isAdultPresent);
 
 // Alternative solution to dynamically get today's year
@@ -328,7 +329,13 @@ Use Array.prototype.every() to determine if every person in the devs array is
 let isEveryone19OrOlder = null;
 
 // Complete the exercise in the space below:
+isEveryone19OrOlder = devs.every(dev => (2025 - dev.year) >= 19);
 
+// Check your work:
+console.log('Exercise 7 my result: ', isEveryone19OrOlder);
+
+// Alternative solution to dynamically get today's year
+isEveryone19OrOlder = devs.every(dev => (currentYear - dev.year) >= 19);
 // Check your work:
 console.log('Exercise 7 my result: ', isEveryone19OrOlder);
 console.log('Exercise 7 correct result: ', false);
