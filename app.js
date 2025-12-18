@@ -165,7 +165,6 @@ the past to those born most recently).
 let sortedByBirthYear = [];
 
 // Complete the exercise in the space below:
-
 sortedByBirthYear = inventors.slice().sort((a, b) => a.year - b.year);
 
 // Check your work:
@@ -306,11 +305,9 @@ console.log('Exercise 6 my result: ', isAdultPresent);
 console.log('Exercise 6 correct result: ', true);
 
 /*
-
 You can use a static year value to solve problems 6 and 7. 
 As a small level up opportunity, check out how to dynamically 
 get today’s year using the Date() constructor.
-
 */
 
 /*
@@ -336,8 +333,26 @@ console.log('Exercise 7 my result: ', isEveryone19OrOlder);
 
 // Alternative solution to dynamically get today's year
 isEveryone19OrOlder = devs.every(dev => (currentYear - dev.year) >= 19);
+
 // Check your work:
 console.log('Exercise 7 my result: ', isEveryone19OrOlder);
 console.log('Exercise 7 correct result: ', false);
 
 
+/*
+Exercise 8: Array.prototype.find()
+
+Use Array.prototype.find() to identify and retrieve the comment object with 
+a specific ID 823423 from an array of comment objects.
+
+- Assign the found comment object to the variable 'commentById'.
+*/
+
+let commentById = {};
+
+// Complete the exercise in the space below:
+commentById = comments.find(comment => comment.id === 823423);
+
+// Check your work:
+console.log('Exercise 8 my result: ', commentById);
+console.log('Exercise 8 correct result: ', { text: 'Super good', id: 823423 });
